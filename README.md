@@ -4,7 +4,7 @@ My collection of ARM assembly language solutions for embedded systems programmin
 
 **Target Platform:** Freescale K60 (ARM Cortex-M4)  
 **Programming Language:** ARM Assembly Language  
-**Development Environment:** CodeWarrior IDE
+**Development Environment:** CodeWarrior IDE running in VirtualBox with prepared development OS
 
 ## Project Overview
 
@@ -21,9 +21,9 @@ This repository contains my implementations of various embedded systems programm
 
 ## Solutions
 
-### task 1
+### Task 1: Processor Fundamentals
 
-### V1-1: Maximum Value Determination
+#### V1-1: Maximum Value Determination
 ARM assembly program that finds maximum values in memory arrays with terminal output functionality. Demonstrates fundamental memory operations, data comparison algorithms, and basic I/O handling.
 
 **Key techniques:**
@@ -31,7 +31,7 @@ ARM assembly program that finds maximum values in memory arrays with terminal ou
 - Comparison algorithms in assembly
 - Terminal communication via UART
 
-### V1-2: Bit Manipulation System
+#### V1-2: Bit Manipulation System
 Advanced bit manipulation routines using ARM Cortex-M4 bit-banding features. Optimized for atomic bit operations and efficient peripheral control.
 
 **Key techniques:**
@@ -39,7 +39,7 @@ Advanced bit manipulation routines using ARM Cortex-M4 bit-banding features. Opt
 - Atomic bit operations for thread safety
 - Optimized peripheral register control
 
-### V1-3: Digital Signal Processing Operations
+#### V1-3: Digital Signal Processing Operations
 SIMD operations utilizing ARM Cortex-M4 DSP instructions for parallel data processing and mathematical operations.
 
 **Key techniques:**
@@ -47,9 +47,9 @@ SIMD operations utilizing ARM Cortex-M4 DSP instructions for parallel data proce
 - DSP instruction set optimization
 - Efficient data processing algorithms
 
-### task 2
+### Task 2: Advanced Processing and Timing
 
-### V2-1: Advanced DSP Matrix Operations
+#### V2-1: Advanced DSP Matrix Operations
 Complex mathematical operations including matrix multiplication and multiply-accumulate instructions with saturation handling.
 
 **Key techniques:**
@@ -57,7 +57,7 @@ Complex mathematical operations including matrix multiplication and multiply-acc
 - MAC (Multiply-Accumulate) operations
 - Overflow detection and saturation arithmetic
 
-### V2-2: Software Real-Time Clock
+#### V2-2: Software Real-Time Clock
 Precise software-based timekeeping system with user interaction capabilities and time display functionality.
 
 **Key techniques:**
@@ -65,7 +65,7 @@ Precise software-based timekeeping system with user interaction capabilities and
 - Real-time clock algorithms
 - User interface for time setting/display
 
-### V2-3: Hardware Interrupt Management
+#### V2-3: Hardware Interrupt Management
 Comprehensive interrupt service routines for hardware timer events with efficient ISR design and real-time response guarantees.
 
 **Key techniques:**
@@ -73,9 +73,9 @@ Comprehensive interrupt service routines for hardware timer events with efficien
 - Efficient interrupt service routine design
 - Real-time system responsiveness optimization
 
-### task 3
+### Task 3: Hardware Interfaces
 
-### V3-1: Hardware CRC Implementation
+#### V3-1: Hardware CRC Implementation
 Cyclic redundancy check system using the microcontroller's built-in CRC hardware acceleration for data integrity verification.
 
 **Key techniques:**
@@ -83,7 +83,7 @@ Cyclic redundancy check system using the microcontroller's built-in CRC hardware
 - Data integrity verification algorithms
 - Hardware acceleration utilization
 
-### V3-2: GPIO Control System
+#### V3-2: GPIO Control System
 General-purpose I/O control system with LED management and button input handling including debouncing algorithms.
 
 **Key techniques:**
@@ -91,9 +91,9 @@ General-purpose I/O control system with LED management and button input handling
 - Button debouncing algorithms
 - LED control and visual feedback systems
 
-### task 4
+### Task 4: Analog Systems
 
-### V4-1: Analog-to-Digital Conversion System
+#### V4-1: Analog-to-Digital Conversion System
 High-resolution ADC programming with calibration routines and signal averaging for precise analog measurements.
 
 **Key techniques:**
@@ -102,9 +102,9 @@ High-resolution ADC programming with calibration routines and signal averaging f
 - Signal averaging and noise reduction
 - Voltage measurement and conversion
 
-### task 5
+### Task 5: I²C Communication
 
-### V5-1: I²C Temperature Sensor Interface
+#### V5-1: I²C Temperature Sensor Interface
 I²C master mode communication system interfacing with DS75 temperature sensor, including multi-byte transaction handling.
 
 **Key techniques:**
@@ -113,9 +113,9 @@ I²C master mode communication system interfacing with DS75 temperature sensor, 
 - Temperature sensor interfacing
 - Communication error handling
 
-### task 6
+### Task 6: SPI Communication
 
-### V6-1: SPI Temperature Monitoring System
+#### V6-1: SPI Temperature Monitoring System
 High-speed SPI communication system with DS1722 temperature sensor featuring configurable resolution and real-time monitoring.
 
 **Key techniques:**
@@ -124,9 +124,9 @@ High-speed SPI communication system with DS1722 temperature sensor featuring con
 - Configurable sensor resolution
 - Real-time temperature monitoring
 
-### task 7
+### Task 7: Advanced Timers
 
-### V7-1: Hardware Real-Time Clock
+#### V7-1: Hardware Real-Time Clock
 Hardware-based RTC system with alarm functionality and precise time management capabilities.
 
 **Key techniques:**
@@ -134,7 +134,7 @@ Hardware-based RTC system with alarm functionality and precise time management c
 - Alarm and scheduling implementation
 - Precise time management algorithms
 
-### V7-2: Precision Time Signal Generator
+#### V7-2: Precision Time Signal Generator
 DCF77 time signal generation system with precise timing control and signal encoding for time transmission applications.
 
 **Key techniques:**
@@ -142,7 +142,7 @@ DCF77 time signal generation system with precise timing control and signal encod
 - Precise timing signal generation
 - Time code encoding algorithms
 
-### V7-3: Advanced Timer Control System
+#### V7-3: Advanced Timer Control System
 FlexTimer module programming with PWM generation, input capture, and advanced timing control features.
 
 **Key techniques:**
@@ -179,7 +179,7 @@ My development process for each solution:
 
 ## Key Implementation Highlights
 
-**Real-Time Performance:** All solutions meet strict timing requirements through hand-optimized assembly code and efficient interrupt handling.
+**Real-Time Performance:** All solutions meet strict timing requirements through optimized assembly code and efficient interrupt handling.
 
 **Hardware Integration:** Direct peripheral control demonstrates deep understanding of microcontroller architecture and embedded system design.
 
@@ -206,10 +206,13 @@ My development process for each solution:
 
 ## Build Requirements
 
-- Freescale CodeWarrior Development Studio
+- VirtualBox with prepared development environment
+- Freescale CodeWarrior Development Studio (running in virtualized environment)
 - TWR-K60N512 development board
 - UART terminal program
 - Oscilloscope (for signal verification)
+
+**Note:** All development was performed using a VirtualBox virtual machine with a pre-configured operating system and development toolchain specifically prepared for embedded programming.
 
 ## Repository Structure
 
