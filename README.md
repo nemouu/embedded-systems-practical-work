@@ -1,6 +1,6 @@
 # Embedded Systems ARM Assembly Projects
 
-My collection of ARM assembly language solutions for embedded systems programming on the Freescale K60 microcontroller, created during practical work at my university. These projects demonstrate low-level hardware programming, real-time system design, and direct peripheral control using pure ARM assembly language.
+My collection of ARM assembly solutions for embedded systems programming on the Freescale K60 microcontroller, created during practical work at my university. These projects demonstrate low-level hardware programming, real-time system design, and direct peripheral control using pure ARM assembly language.
 
 **Target Platform:** Freescale K60 (ARM Cortex-M4)  
 **Programming Language:** ARM Assembly Language  
